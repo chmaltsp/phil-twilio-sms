@@ -1,0 +1,13 @@
+<div class="col-md-2 col-md-offset-5">
+<h2 class="text-center">Phil's Twilio App</h2>
+  <p>Enter a phone number and a message to send an SMS!</p>
+    <%= form_tag('/send_sms', method: 'POST') do %>
+    <div class="form-group">
+    <input type="text" placeholder="Enter number" name="number" class="form-control">
+    </div>
+    <div class="form-group">
+    <input type="text" placeholder="Enter message here" name="message" class="form-control">
+    </div>
+    <button class="btn btn-default center-block" type="submit">Submit</button>
+    <% end %>
+  </div>
